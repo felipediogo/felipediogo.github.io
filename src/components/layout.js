@@ -7,11 +7,18 @@
 
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 import { useStaticQuery, graphql } from "gatsby";
 
 import GlobalStyle from "#/styles/GlobalStyle";
 
 import Header from "./header";
+
+const Footer = styled.footer`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -37,12 +44,11 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}>
         <main>{children}</main>
-        {/**TODO: ADD FOOTER */}
-        {/* <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer> */}
+        <Footer>
+          <a href="https://github.com/felipediogo/felipediogo.github.io">
+            © {new Date().getFullYear()}, Built with Gatsby
+          </a>
+        </Footer>
       </div>
     </div>
   );
