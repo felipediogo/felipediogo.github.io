@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 
 const About = () => {
   return (
-    <Container>
+    <Container id="about-container">
       <h1 className="header">About</h1>
       <Wrapper>
         <div style={{ width: "60%", maxWidth: "480px" }}>

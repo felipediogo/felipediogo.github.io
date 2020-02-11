@@ -8,10 +8,10 @@ const { colors, fonts, fontSizes } = theme;
 
 const GlobalStyle = createGlobalStyle`
     ${Fonts}
-
     html {
         box-sizing: border-box;
         width: 100%;
+        scroll-behavior: smooth;
       }
 
       *,
@@ -104,6 +104,30 @@ const GlobalStyle = createGlobalStyle`
       &:focus {
         color: ${colors.green};
       }
+    }
+
+    .navigation {
+      padding-top: 8px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 832px;
+      width: 100%;
+    }
+
+    .navigation > ul {
+      display: flex;
+      padding-inline-start: 0px;
+      justify-content: space-between;
+    }
+
+    .navigation > ul > li {
+      list-style-type: none;
+      display: inline;
+    }
+
+    .navigation > ul > li > a {
+      font-weight: 900;
+      color: black;
     }
 `;
 

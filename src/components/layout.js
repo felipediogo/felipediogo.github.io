@@ -33,9 +33,8 @@ const Layout = ({ children }) => {
 
   return (
     <div id="root">
-      <Header siteTitle={"Felipe Fernandes Diogo | Software Engineer"} />
-
       <GlobalStyle />
+      <Header siteTitle={"Felipe Fernandes Diogo | Software Engineer"} />
 
       <div
         style={{
