@@ -112,12 +112,16 @@ const GlobalStyle = createGlobalStyle`
       margin-right: auto;
       max-width: 832px;
       width: 100%;
+
     }
 
     .navigation > ul {
       display: flex;
       padding-inline-start: 0px;
       justify-content: space-between;
+      ${media.desktop`
+        justify-content: space-around;
+      `};
     }
 
     .navigation > ul > li {

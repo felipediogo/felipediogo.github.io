@@ -2,7 +2,7 @@ import React from "react";
 
 import Home from "#/components/containers/Home";
 import About from "#/components/containers/About";
-import Experience from "#/components/containers/Experience";
+// import Experience from "#/components/containers/Experience";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";

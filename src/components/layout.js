@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
       }
     }
   `);
-
+  console.log(data);
   return (
     <div id="root">
       <GlobalStyle />

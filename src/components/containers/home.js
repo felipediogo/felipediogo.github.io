@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import Section from "#/styles/Section";
@@ -25,7 +25,7 @@ const Home = () => {
       <h1 className="big-title">Hey there!</h1>
       <h1 className="title">I'm Felipe, and I build applications for the web.</h1>
       <p>
-        I'm a software engineer from Brazil, currently moving to Sydney. I aim to build highly
+        I'm a software engineer from Brazil, currently living in Sydney. I aim to build highly
         designed applications tailored to customer's needs.
       </p>
     </Container>

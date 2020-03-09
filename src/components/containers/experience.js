@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import Selfie from "#/components/image";
 import Section from "#/styles/Section";
 // import mixin from "#/styles/mixin";
 // import media from "#/styles/media";
@@ -25,7 +24,6 @@ const Experience = () => {
     <Container>
       <h1 className="header">Experience</h1>
       <Wrapper>
-        <Selfie style={{ width: "150px" }} />
         <div>
           <p className="about">
             Hey, so I'm a Software developer, with meaningful experience with software engineering
@@ -41,7 +39,7 @@ const Experience = () => {
             currently using is:
           </p>
           <ul>
-            <li>Javascript (ES6+)</li>
+            <li>Javascript</li>
             <li>React</li>
             <li>Node</li>
             <li>Java</li>
