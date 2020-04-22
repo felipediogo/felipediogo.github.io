@@ -21,9 +21,15 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: `${__dirname}/src/icons`
-        }
-      }
+          include: `${__dirname}/src/icons`,
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "felipediogo.com",
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

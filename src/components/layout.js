@@ -12,7 +12,6 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import GlobalStyle from "#/styles/GlobalStyle";
 
-import Header from "./header";
 
 const Footer = styled.footer`
   width: 100%;
@@ -30,11 +29,9 @@ const Layout = ({ children }) => {
       }
     }
   `);
-  console.log(data);
   return (
     <div id="root">
       <GlobalStyle />
-      <Header siteTitle={"Felipe Fernandes Diogo | Software Engineer"} />
 
       <div
         style={{
